@@ -35,8 +35,13 @@ in `build/content_a.py` or `build/content_b.py`. Hubs, site map and `sitemap.xml
 
 ## Publish on GitHub Pages (free plan)
 
-Repository **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main`, folder `/ (root)` → Save.**
-The site appears at `https://<account>.github.io/mindwork-com/`. All links are relative, so it works there and on a custom domain.
+The site is live at `https://webworksa1.github.io/mindwork-com/`. `main` is the source of truth.
+GitHub Pages currently serves the `gh-pages` branch, which the workflow keeps identical to `main` after every push
+and every daily refresh.
+
+To serve `main` directly: repository **Settings → Pages → Build and deployment → Branch: `main`, folder `/ (root)` → Save.**
+The workflow notices the change, stops mirroring, and `gh-pages` can then be deleted. All links are relative, so the
+site works on the github.io address and on a custom domain.
 
 Custom domain: in the same Pages screen enter `mindwork.com`, then at the DNS host point the apex at GitHub Pages
 (A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) and `www` as a CNAME to
