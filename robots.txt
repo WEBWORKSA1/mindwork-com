@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /build/
+Disallow: /scripts/
+Disallow: /docs/
+
+Sitemap: https://mindwork.com/sitemap.xml

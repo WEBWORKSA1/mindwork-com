@@ -1,0 +1,15 @@
+{
+ "name": "MindWork.com",
+ "short_name": "MindWork",
+ "start_url": "./index.html",
+ "display": "standalone",
+ "background_color": "#EEF1F6",
+ "theme_color": "#14213D",
+ "icons": [
+  {
+   "src": "assets/favicon.svg",
+   "sizes": "any",
+   "type": "image/svg+xml"
+  }
+ ]
+}

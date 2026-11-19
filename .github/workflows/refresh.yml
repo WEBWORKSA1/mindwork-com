@@ -1,0 +1,45 @@
+name: Refresh content and rebuild
+
+on:
+  schedule:
+    - cron: '23 4 * * *'   # every day, 04:23 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'build/**'
+      - 'scripts/**'
+      - '.github/workflows/refresh.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch research headlines and videos
+        run: python scripts/refresh.py
+      - name: Rebuild the pages
+        run: python build/build.py
+      - name: Commit if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Daily refresh: research radar, video shelf, rebuilt pages"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
