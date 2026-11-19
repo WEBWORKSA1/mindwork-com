@@ -6,10 +6,6 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths:
-      - 'build/**'
-      - 'scripts/**'
-      - '.github/workflows/refresh.yml'
 
 permissions:
   contents: write
@@ -50,23 +46,14 @@ jobs:
             git push origin HEAD:main
             echo "pushed=yes" >> "$GITHUB_OUTPUT"
           fi
-      - name: Ask GitHub Pages to publish the new commit
-        if: steps.commit.outputs.pushed == 'yes'
+      - name: Publish
+        # GitHub Pages serves this site from the branch chosen in Settings > Pages.
+        # While that branch is gh-pages, keep it identical to main. Once Pages is switched to main, this step only requests a build.
         continue-on-error: true
-        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"
-
-  pages-source:
-    # Keeps GitHub Pages publishing from the main branch root.
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    env:
-      GH_TOKEN: ${{ github.token }}
-    steps:
-      - name: Point GitHub Pages at main
         run: |
-          current=$(gh api "repos/${{ github.repository }}/pages" --jq '.source.branch + ":" + .source.path' || echo "unknown")
-          echo "Pages source is: $current"
-          if [ "$current" != "main:/" ]; then
-            gh api -X PUT "repos/${{ github.repository }}/pages" -f "source[branch]=main" -f "source[path]=/"
-            echo "Pages source set to main:/"
+          source=$(gh api "repos/${{ github.repository }}/pages" --jq '.source.branch' || echo "")
+          echo "Pages publishes from: ${source:-unknown}"
+          if [ "$source" = "gh-pages" ]; then
+            git push --force origin HEAD:gh-pages
           fi
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
