@@ -1,103 +1,221 @@
 {
- "updated": null,
+ "updated": "2026-11-19T11:27:59Z",
  "items": [
   {
-   "id": "arj7oStGLkU",
-   "title": "Inside the mind of a master procrastinator",
+   "id": "B2SIsncgFi0",
+   "title": "How to Rewire Your Brain — and Find Your Flow | Heather Berlin | TED",
    "channel": "TED",
-   "date": "",
-   "seed": true
+   "date": "2026-11-17"
+  },
+  {
+   "id": "7mEK5wZHpto",
+   "title": "Mushrooms for the Mind & Immune System | Paul Stamets",
+   "channel": "Andrew Huberman",
+   "date": "2026-11-16"
+  },
+  {
+   "id": "4qxROUatTzk",
+   "title": "The Science of Learning New Things | Tania Lombrozo | TED",
+   "channel": "TED",
+   "date": "2026-11-15"
+  },
+  {
+   "id": "EMjyOVI7gfc",
+   "title": "Turns out, your group chat might be more powerful than you think. #TEDTalks",
+   "channel": "TED",
+   "date": "2026-11-14"
+  },
+  {
+   "id": "1rn_Clc-MM0",
+   "title": "Essentials: How Emotions & Social Factors Impact Learning | Dr. Mary Helen Immordino-Yang",
+   "channel": "Andrew Huberman",
+   "date": "2026-11-12"
+  },
+  {
+   "id": "WXnioZZVXtA",
+   "title": "My top 5 productivity apps right now",
+   "channel": "Ali Abdaal",
+   "date": "2026-11-11"
+  },
+  {
+   "id": "T4Bpz-TKDW0",
+   "title": "Don't make decisions in an echo chamber | Dambisa Moyo",
+   "channel": "Big Think",
+   "date": "2026-11-10"
+  },
+  {
+   "id": "g3_TqjSLyLk",
+   "title": "AI Brain Fry Is Real. Here’s What Leaders Can Do | Julie Bedard | TED",
+   "channel": "TED",
+   "date": "2026-11-09"
+  },
+  {
+   "id": "jXTY8WwohF0",
+   "title": "LEVERAGING PARALLEL PATHWAYS, EXERCISE & COLD TO FOCUS & LEARN BETTER",
+   "channel": "Andrew Huberman",
+   "date": "2026-11-06"
+  },
+  {
+   "id": "uRCskQbL1KY",
+   "title": "I Ranked Every Productivity Tool From Worst to Best",
+   "channel": "Ali Abdaal",
+   "date": "2026-11-06"
+  },
+  {
+   "id": "FNbTA_W9B5o",
+   "title": "WHEN TO *NOT* TRUST YOUR THOUGHTS",
+   "channel": "Andrew Huberman",
+   "date": "2026-10-31"
+  },
+  {
+   "id": "KBfIo9sZbC4",
+   "title": "How Does Ketamine Work?",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "eyZEqSPeMwg",
+   "title": "Relativity is so much weirder than we thought...",
+   "channel": "Veritasium",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "NiCgcUTL9_Q",
+   "title": "Fiber Optics are so much cooler than I thought",
+   "channel": "Veritasium",
+   "date": "2026-10-12"
+  },
+  {
+   "id": "b1EMX3wyqCY",
+   "title": "Your Brain on Magic Mushrooms",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "date": "2026-09-28"
+  },
+  {
+   "id": "NIifnIP_NnQ",
+   "title": "How ADHD Medication Works",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "date": "2026-09-05"
+  },
+  {
+   "id": "vhqq4U3mnNQ",
+   "title": "I never dread this workout",
+   "channel": "Thomas Frank",
+   "date": "2024-06-30"
+  },
+  {
+   "id": "NpUuuT_EzSs",
+   "title": "I learned to code from scratch in 1 year. Here's how.",
+   "channel": "Thomas Frank",
+   "date": "2023-11-24"
+  },
+  {
+   "id": "2pJY7kBXBb4",
+   "title": "What Are We Really Doing While We Sleep | Compilation",
+   "channel": "SciShow Psych",
+   "date": "2022-07-25"
+  },
+  {
+   "id": "MX3RLigD-UA",
+   "title": "Cinema Psychology | Compilation",
+   "channel": "SciShow Psych",
+   "date": "2022-05-16"
+  },
+  {
+   "id": "TR1jAlI_VYw",
+   "title": "The Psychology of Senses | Compilation",
+   "channel": "SciShow Psych",
+   "date": "2022-04-11"
+  },
+  {
+   "id": "LNBXhocsQyY",
+   "title": "Tune Into Psychology | Compilation",
+   "channel": "SciShow Psych",
+   "date": "2022-03-14"
+  },
+  {
+   "id": "BQKfAxFgi-E",
+   "title": "The 10 Best Windows Productivity Apps in 2022",
+   "channel": "Thomas Frank",
+   "date": "2022-02-26"
+  },
+  {
+   "id": "cNUPmmc5b3c",
+   "title": "Why it's so hard to stick to your workout routine",
+   "channel": "Thomas Frank",
+   "date": "2022-01-31"
+  },
+  {
+   "id": "arj7oStGLkU",
+   "title": "Inside the Mind of a Master Procrastinator | Tim Urban | TED",
+   "channel": "TED",
+   "date": ""
   },
   {
    "id": "Hu4Yvq-g7_Y",
-   "title": "How to get your brain to focus",
+   "title": "How to Get Your Brain to Focus | Chris Bailey | TEDxManchester",
    "channel": "TEDx Talks",
-   "date": "",
-   "seed": true
+   "date": ""
   },
   {
    "id": "5MgBikgcWnY",
-   "title": "The first 20 hours: how to learn anything",
+   "title": "The first 20 hours -- how to learn anything | Josh Kaufman | TEDxCSU",
    "channel": "TEDx Talks",
-   "date": "",
-   "seed": true
+   "date": ""
   },
   {
    "id": "LNHBMFCzznE",
-   "title": "After watching this, your brain will not be the same",
+   "title": "After watching this, your brain will not be the same | Lara Boyd | TEDxVancouver",
    "channel": "TEDx Talks",
-   "date": "",
-   "seed": true
+   "date": ""
   },
   {
    "id": "BHY0FxzoKZE",
-   "title": "The brain-changing benefits of exercise",
+   "title": "The Brain-Changing Benefits of Exercise | Wendy Suzuki | TED",
    "channel": "TED",
-   "date": "",
-   "seed": true
+   "date": ""
   },
   {
    "id": "5MuIMqhT8DM",
-   "title": "Sleep is your superpower",
+   "title": "Sleep Is Your Superpower | Matt Walker | TED",
    "channel": "TED",
-   "date": "",
-   "seed": true
+   "date": ""
   },
   {
    "id": "qzR62JJCMBQ",
-   "title": "All it takes is 10 mindful minutes",
+   "title": "All it takes is 10 mindful minutes | Andy Puddicombe | TED",
    "channel": "TED",
-   "date": "",
-   "seed": true
+   "date": ""
   },
   {
    "id": "8jPQjjsBbIc",
-   "title": "How to stay calm when you know you'll be stressed",
+   "title": "How to stay calm when you know you'll be stressed | Daniel Levitin | TED",
    "channel": "TED",
-   "date": "",
-   "seed": true
+   "date": ""
   },
   {
    "id": "_X0mgOOSpLU",
-   "title": "The power of believing that you can improve",
+   "title": "The power of believing that you can improve | Carol Dweck | TED",
    "channel": "TED",
-   "date": "",
-   "seed": true
+   "date": ""
   },
   {
    "id": "U6PoUg7jXsA",
-   "title": "Feats of memory anyone can do",
+   "title": "Feats of memory anyone can do | Joshua Foer",
    "channel": "TED",
-   "date": "",
-   "seed": true
+   "date": ""
   },
   {
    "id": "rrkrvAUbU9Y",
-   "title": "The puzzle of motivation",
+   "title": "The puzzle of motivation | Dan Pink | TED",
    "channel": "TED",
-   "date": "",
-   "seed": true
+   "date": ""
   },
   {
    "id": "fxbCHn6gE3U",
-   "title": "The surprising habits of original thinkers",
+   "title": "The surprising habits of original thinkers | Adam Grant | TED",
    "channel": "TED",
-   "date": "",
-   "seed": true
-  },
-  {
-   "id": "RcGyVTAoXEU",
-   "title": "How to make stress your friend",
-   "channel": "TED",
-   "date": "",
-   "seed": true
-  },
-  {
-   "id": "H14bBuluwB8",
-   "title": "Grit: the power of passion and perseverance",
-   "channel": "TED",
-   "date": "",
-   "seed": true
+   "date": ""
   }
  ]
 }
