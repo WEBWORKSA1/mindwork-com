@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 concurrency:
   group: refresh
@@ -24,6 +25,7 @@ jobs:
     timeout-minutes: 10
     env:
       PYTHONDONTWRITEBYTECODE: '1'
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -34,14 +36,37 @@ jobs:
       - name: Rebuild the pages
         run: python build/build.py
       - name: Commit if anything changed
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then
             echo "Nothing changed."
+            echo "pushed=no" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Daily refresh: research radar, video shelf, rebuilt pages"
             git pull --rebase origin main
             git push origin HEAD:main
+            echo "pushed=yes" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Ask GitHub Pages to publish the new commit
+        if: steps.commit.outputs.pushed == 'yes'
+        continue-on-error: true
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"
+
+  pages-source:
+    # Keeps GitHub Pages publishing from the main branch root.
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Point GitHub Pages at main
+        run: |
+          current=$(gh api "repos/${{ github.repository }}/pages" --jq '.source.branch + ":" + .source.path' || echo "unknown")
+          echo "Pages source is: $current"
+          if [ "$current" != "main:/" ]; then
+            gh api -X PUT "repos/${{ github.repository }}/pages" -f "source[branch]=main" -f "source[path]=/"
+            echo "Pages source set to main:/"
           fi
