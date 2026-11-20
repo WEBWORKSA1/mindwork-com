@@ -1,6 +1,12 @@
 {
- "updated": "2026-11-19T11:27:59Z",
+ "updated": "2026-11-20T13:19:13Z",
  "items": [
+  {
+   "id": "8YHTMsy0bT8",
+   "title": "Essentials: Nicotine's Effects on the Brain & Body & How to Quit Smoking or Vaping",
+   "channel": "Andrew Huberman",
+   "date": "2026-11-19"
+  },
   {
    "id": "B2SIsncgFi0",
    "title": "How to Rewire Your Brain — and Find Your Flow | Heather Berlin | TED",
@@ -62,12 +68,6 @@
    "date": "2026-11-06"
   },
   {
-   "id": "FNbTA_W9B5o",
-   "title": "WHEN TO *NOT* TRUST YOUR THOUGHTS",
-   "channel": "Andrew Huberman",
-   "date": "2026-10-31"
-  },
-  {
    "id": "KBfIo9sZbC4",
    "title": "How Does Ketamine Work?",
    "channel": "Kurzgesagt – In a Nutshell",
@@ -90,12 +90,6 @@
    "title": "Your Brain on Magic Mushrooms",
    "channel": "Kurzgesagt – In a Nutshell",
    "date": "2026-09-28"
-  },
-  {
-   "id": "NIifnIP_NnQ",
-   "title": "How ADHD Medication Works",
-   "channel": "Kurzgesagt – In a Nutshell",
-   "date": "2026-09-05"
   },
   {
    "id": "vhqq4U3mnNQ",
@@ -214,6 +208,12 @@
   {
    "id": "fxbCHn6gE3U",
    "title": "The surprising habits of original thinkers | Adam Grant | TED",
+   "channel": "TED",
+   "date": ""
+  },
+  {
+   "id": "RcGyVTAoXEU",
+   "title": "How to Make Stress Your Friend | Kelly McGonigal | TED",
    "channel": "TED",
    "date": ""
   }
