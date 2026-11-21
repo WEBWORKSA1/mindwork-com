@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:19:13Z",
+ "updated": "2026-11-21T12:52:21Z",
  "items": [
   {
    "id": "8YHTMsy0bT8",
@@ -48,12 +48,6 @@
    "title": "Don't make decisions in an echo chamber | Dambisa Moyo",
    "channel": "Big Think",
    "date": "2026-11-10"
-  },
-  {
-   "id": "g3_TqjSLyLk",
-   "title": "AI Brain Fry Is Real. Here’s What Leaders Can Do | Julie Bedard | TED",
-   "channel": "TED",
-   "date": "2026-11-09"
   },
   {
    "id": "jXTY8WwohF0",
@@ -214,6 +208,12 @@
   {
    "id": "RcGyVTAoXEU",
    "title": "How to Make Stress Your Friend | Kelly McGonigal | TED",
+   "channel": "TED",
+   "date": ""
+  },
+  {
+   "id": "H14bBuluwB8",
+   "title": "Grit: The Power of Passion and Perseverance | Angela Lee Duckworth | TED",
    "channel": "TED",
    "date": ""
   }
